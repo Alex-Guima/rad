@@ -1,4 +1,18 @@
+# Project Folders/Files
 .venv
 notes/
 Pipfile
 Pipfile.lock
+
+# idex.dev config files
+.idx
+
+# VSCode config files
+.vscode
+
+# DB config files
+.pg_service.conf
+.pgpass
+
+# Django config files
+settings.py
