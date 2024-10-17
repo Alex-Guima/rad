@@ -1,0 +1,9 @@
+<h1>{{aluno.matricula}} - {{ aluno.nome }}</h1>
+<ul>
+    <li>Ativo: {{aluno.status_matricula}}</li>
+    <li>Campus: {{aluno.campus}}</li>
+    <li>Serie: {{aluno.serie}}</li>
+    {% for materia in aluno.materias_matriculadas.all %}
+    <li>{{ materia.nome }}</li>
+    {% endfor %}
+</ul>

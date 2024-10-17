@@ -3,6 +3,7 @@
 notes/
 Pipfile
 Pipfile.lock
+.env
 
 # idex.dev config files
 .idx
@@ -16,3 +17,5 @@ Pipfile.lock
 
 # Django config files
 settings.py
+
+pyrightconfig.json
