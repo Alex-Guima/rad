@@ -4,6 +4,10 @@
     <li>Campus: {{aluno.campus}}</li>
     <li>Serie: {{aluno.serie}}</li>
     {% for materia in aluno.materias_matriculadas.all %}
-    <li>{{ materia.nome }}</li>
+    <li>
+        <a href="{% url 'notas:detail_materia' materia.id %} "
+            >{{ materia.nome }}</a
+        >
+    </li>
     {% endfor %}
 </ul>
