@@ -15,7 +15,4 @@ Pipfile.lock
 .pg_service.conf
 .pgpass
 
-# Django config files
-settings.py
-
 pyrightconfig.json
