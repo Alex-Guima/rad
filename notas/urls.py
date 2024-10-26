@@ -6,5 +6,5 @@ app_name = "notas"
 urlpatterns = [
     path("", views.index, name="index"),
     path("<int:matricula>/", views.detail, name="detail"),
-    path("<int:matricula>/materias/", views.materias_matriculadas, name="materias_matriculadas"),
+    path("<int:matricula>/materias/", views.detail_materia, name="detail_materia"),
 ]

@@ -17,7 +17,7 @@ def detail(request, matricula):
     aluno = get_object_or_404(Aluno, pk=matricula)
     return render(request, "notas/detail.html", {"aluno": aluno})
 
-def materias_matriculadas(request, matricula):
+def detail_materia(request, matricula):
     aluno = get_object_or_404(Aluno, pk=matricula)
     materias = aluno.materias_matriculadas.all()
     return render(request, "notas/materias_matriculadas.html", {"materias": materias})

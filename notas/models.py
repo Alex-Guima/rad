@@ -19,7 +19,6 @@ class Aluno(models.Model):
     campus = models.CharField(choices=CAMPUS_CHOICES, null=False)
     serie = models.CharField()
     created_at = models.DateTimeField(db_default=Now(), editable=False)
-    materias_matriculadas = models.ManyToManyField("Materia", related_name="alunos")
 
     def __str__(self):
         return self.nome
@@ -39,7 +38,7 @@ class Materia(models.Model):
     carga_horaria = models.IntegerField()
     professor = models.CharField(max_length=50, null=False)
     created_at = models.DateTimeField(db_default=Now(), editable=False)
-    alunos_matriculados = models.ManyToManyField("Aluno", related_name="materias")
+    alunos = models.ManyToManyField(Aluno)
 
     def __str__(self):
         return self.nome
