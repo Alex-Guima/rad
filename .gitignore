@@ -1,18 +1,18 @@
 # Project Folders/Files
-.venv
-notes/
-Pipfile
-Pipfile.lock
 .env
+.venv/
 
-# idex.dev config files
+*.pyc
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+dist/
+build/
+*.egg-info/
+
 .idx
-
-# VSCode config files
-.vscode
-
-# DB config files
-.pg_service.conf
-.pgpass
-
-pyrightconfig.json
