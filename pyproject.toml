@@ -1,0 +1,18 @@
+[build-system]
+requires = [hatchling]
+build-backend = "hatchling.build"
+
+[project]
+name = "rad_projeto_av_Alex-Guima"
+version = "0.0.1"
+authors = [
+    { name = "Alexandre Guimarães", email = "alexandreagtaveira@gmail.com" },
+]
+description = "Projeto para a disciplina de Desenvolvimento Rápido de Aplicações em Python"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = ["flask", "psycopg[c]", "peewee"]
+
+[project.urls]
+Homepage = "https://github.com/Alex-Guima/rad_projeto_av"
